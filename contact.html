@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <!-- put css here-->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+  <style>    
+  p {
+    color: white;
+    font-family: "Times New Roman"
+    direction: ltr;
+  }
+  td {
+    text-align: left;
+    padding-left: 0px;
+    padding-right: 10px;
+    direction ltr:
+    display: inline-block;
+  }
+  table {
+    width: auto;
+    margin-right: 20%;
+    margin-left: 0%;
+  }
+  
+  input, textarea {
+    background-color: black;
+    font-size: 50px;
+  }
+  
+ html {
+    overflow: hidden;
+    height: 100%;
+}
+  
+  p, input, textarea {
+    color: white;
+    font-family: "Times New Roman";
+    font-size: 25px;
+    width: 250px;
+  }
+  
+  input[type="reset"], input[type="submit"] {
+    
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+  }
+  input[type="text"] {
+    height: 70%;
+    font-size: 35px;
+  }
+  
+  input[type="text"], textarea {
+    border: none;
+    outline: none;
+  }
+  span{
+display:block;
+font-size:20px;
+color: white;
+}
+  tr {
+    
+    padding-bottom: 10px;
+  }
+</style>
+    <div class="center" style="text-align: center;">
+      <div class="title">
+        <h2>Contact</h2>
+      </div>
+      <div class="box" style="display: inline-block; margin: 0 auto; margin-right: 10%; margin-left: 10%;">
+        <center>
+        
+          <form method="post" name="contact_form" action="contact-form-handler.php" enctype="text/plain">
+            <table bored="0">
+              <tr>
+                <td style=" direction: rt1;text-align: right;"><p style="color:white; direction: rt1;">Name:</p></td>
+                <td style="text-allign: left;"><input type="text" name="name" style="width: 100%;"></td>
+              </tr>
+              <tr>
+                <td style=" direction: rt1;text-align: right;"><p style="color:white; direction: rt1;">E-mail:</p></td>
+                <td><input type="text" name="mail" style="width: 100%;"></td>
+              </tr>
+              <tr>
+                <td style=" direction: rt1;text-align: right;"><p style="color:white; direction: rt1;">Subject:</p></td>
+                <td><input type="text" name="subject" style="width: 100%;"></td>
+              </tr>
+              <tr>
+                <td style="vertical-align: top; direction: rt1;text-align: right;"><p style="color:white; direction: rt1;">Message:</p></td>
+                <td><textarea type="text" name="message" rows="5" cols="80" wrap="soft" maxlength="2000" style="display: inline-block; vertical-align: bottom; resize: none;"></textarea></td>
+              </tr>
+              <tr>
+                <td><input type="reset" value="RESET ↺" ></td>
+                <td style="text-align: right;"><input type="submit" value="SEND →" style="text-align: left; "></td>
+              </tr>
+            </table>
+          </form>
+          <br><br>
+          
+          <script language="JavaScript">
+          var frmvalidator  = new Validator("contactform");
+          frmvalidator.addValidation("name","req","Please provide your name"); 
+          frmvalidator.addValidation("email","req","Please provide your email"); 
+          frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+          </script>
+          
+          <!--FORMAT FOR THIS FUNCTION:
+          frmvalidator.addValidation(Field Name, Validation Descriptor, Error String); -->
+          
+
+          <div class="home">
+            <a href="index.html"><img src="/images/home.png" style="width: 11%; transform: translate(0px, -30px);"></a>
+          </div>
+        </center>
+      </div>
+    </div>
+
+
+
+    <p style="position: relative; bottom: 0; width:100%; text-align: center; color: white; transform: translate(0px, -30px);">
+      <a href="contact.html">Contact </a>• <a href="social.html">Social </a>• <a href="production.html">Production</a>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+body, html {
+					cursor: url("images/cursor2.png") 0 0 , auto !important;
+}
+
+
+.hand:ative {
+  cursor: url("images/explosion.png") 25 25, auto !important;
+}
+
+body {
+  background-image: url(images/lilbit.jpg);
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+
+
+#center {
+  position: fixed;
+  margin: auto;
+  width: 77%;
+  padding-top: 42%;
+  border:10px solid;
+  border-color: #900909;
+}
+
+.home {
+  height: 60%;
+  width: 60%;
+}
+.row {
+  margin-left: 0;
+  margin-bottom: 0;
+  *zoom: 1;
+}
+
+.row:before,
+.row:after { 
+  content:"";
+  display:table;
+}
+
+.row:after {
+  clear:both;
+}
+
+.col{
+  float:left;
+  margin-bottom:0!important;
+  width: 100%;
+  padding-left:20px;
+  position:relative;
+  width:100%;
+}
+
+.col-30 {width: 30%;}
+.col-70 {width: 70%;}
+
+.center {
+  padding: 25px;
+}
+
+.contact-container {
+  display: grid;
+}
+
+.box {
+  width: 60%;
+  margin: auto;
+  padding-top: 2%;
+  background-image: url(images/backer.png);
+  border: 4px solid;
+  border-color: #da0000;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 250%;
+  font-weight: 300;
+}
+
+.frame {
+  width: 200px;
+  height: 160px;
+  background-color: #da0000;
+  display: inline-block;
+  padding: 2px;
+  vertical-align: middle;
+}
+
+.title
+{
+  width:250px;
+  height: auto;
+  margin: auto;
+  background-image: url(images/backer.png);
+  border: 4px solid;
+  border-color: #da0000;
+  text-align: center;
+  transform: translate(0px, 50px);
+  vertical-align: middle;
+  line-height: 10px;
+}
+
+/* this class selector should be placed inside a div that wraps all the links together to uphold consistency*/
+.links {  
+  font-size: 14pt;
+}
+
+td {
+  font-size: 100%;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-family: "Times New Roman"
+}
+table {
+    width: 100%;
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+}
+a {
+  font-size: 14pt;
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: "Times New Roman"
+}
+
+a:visited {
+  text-decoration: none;
+  font-style: italic;;
+  font-family: "Times New Roman";
+  font-weight: normal;
+}
+ 
